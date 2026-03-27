@@ -2,88 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background: #555;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
 
-<header>
-    <h1>Yash Lase</h1>
-    <p>Java Developer | Fresher</p>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <div class="card">
-        <h2>About Me</h2>
-        <p>I am a Software Engineering graduate passionate about Java, Spring Boot, and Web Development.</p>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+            
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>all</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-singin border">
+                <p><span>Hello, sing in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second"> & Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Services</p>
+                <p>Registry</p>
+                <p>Gift Card</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com You can also shop on Amazon India for millions of product with fadt local delivery. <a>  Click here to go amazon.in</a> </p>
+        </div>
     </div>
-</section>
-
-<section id="projects">
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Weather App 🌦️</li>
-            <li>Botnet Detection using ML 🔐</li>
-            <li>Online Order System 🛒</li>
-        </ul>
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Cloths</h2>
+            <div class="box-img" style="background-image:url('box1_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+            <div class="box-img" style="background-image:url('box2_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+            <div class="box-img" style="background-image:url('box3_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+            <div class="box-img" style="background-image:url('box4_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Beauty picks</h2>
+            <div class="box-img" style="background-image:url('box5_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Pet Care</h2>
+            <div class="box-img" style="background-image:url('box6_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>New Arrival in Toys</h2>
+            <div class="box-img" style="background-image:url('box7_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Discover Fashion Trends</h2>
+            <div class="box-img" style="background-image:url('box8_image.jpg');"></div>
+            <p>See more</p>
+            </div>
+        </div>
     </div>
-</section>
-
-<section id="contact">
-    <div class="card">
-        <h2>Contact</h2>
-        <p>Email: yash@example.com</p>
-        <p>Phone: 1234567890</p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Yash Lase</p>
-</footer>
-
+    <footer>
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relation</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relation</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relation</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>         
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relation</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="log"></div>
+        </div>
+    </footer>
 </body>
 </html>
